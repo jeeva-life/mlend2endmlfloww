@@ -38,3 +38,12 @@ conda activate mlproj
 ```bash
 pip install -r requirements.txt
 ```
+
+## DagsHub
+import dagshub
+dagshub.init(repo_owner='jeeva-life', repo_name='mlend2endmlfloww', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1)
